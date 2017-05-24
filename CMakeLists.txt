@@ -95,6 +95,7 @@ endif()
 
 # Define library target.
 add_library(turf ${TURF_FILES})
+set_property(TARGET turf PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 # Set include dirs for this library (done last).
 include_directories(${TURF_ALL_INCLUDE_DIRS})
